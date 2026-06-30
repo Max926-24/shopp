@@ -13,12 +13,28 @@ public class Product {
         return title;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 
     public void setPrice(double price) {
