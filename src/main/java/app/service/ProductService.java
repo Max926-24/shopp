@@ -11,7 +11,20 @@ import java.util.List;
 
 public class ProductService {
 
+    private static ProductService instance;
+
     private final ProductRepository repository = new ProductRepository();
+
+    private ProductService() {
+
+    }
+
+    public static ProductService getInstance() {
+        if (instance == null) {
+            instance = new ProductService();
+        }
+        return instance;
+    }
 
     public Product save(Product product) {
         if (product == null) {

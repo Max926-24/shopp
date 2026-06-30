@@ -7,18 +7,14 @@ import app.exceptions.CustomerSaveException;
 import app.exceptions.CustomerUpdateException;
 import app.repository.CustomerRepository;
 
-import javax.swing.text.html.HTMLDocument;
 import java.util.Iterator;
 import java.util.List;
 
 public class CustomerService {
 
     private final CustomerRepository repository = new CustomerRepository();
-    private final ProductService productService;
+    private final ProductService productService = ProductService.getInstance();
 
-    public CustomerService(ProductService productService) {
-        this.productService = productService;
-    }
 
     public Customer save(Customer customer) {
         if (customer == null) {
