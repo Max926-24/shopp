@@ -27,6 +27,12 @@ public class CustomerService {
         customer.setActive(true);
         return repository.save(customer);
     }
+    public int getAllActiveCustomerNumber(){
+        return getAllCustomers().size();
+    }
+
+
+
 
     public List<Customer> getAllCustomers() {
         return repository.findAll()

@@ -1,4 +1,3 @@
-
 package client;
 
 import app.controller.CustomerController;
@@ -184,7 +183,7 @@ public class Client {
                         customerController.restoreById(id);
                         break;
                     case "8":
-                        System.out.println("Количество покупателей - " + customerController.getAll());
+                        System.out.println("Количество покупателей - " + customerController.getCustomersNumber());
                         break;
                     case "9":
                         System.out.println("Введите идентификатор");
@@ -229,4 +228,3 @@ public class Client {
         }
     }
 }
-

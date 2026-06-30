@@ -17,6 +17,10 @@ public class CustomerController {
     public List<Customer> getAll() {
         return service.getAllCustomers();
     }
+    public int getCustomersNumber(){
+        return service.getAllCustomers().size();
+
+    }
 
     public Customer getById(Long id) {
         return service.getActiveCustomerById(id);
