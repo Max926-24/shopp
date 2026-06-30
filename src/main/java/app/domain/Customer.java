@@ -31,9 +31,6 @@ public class Customer {
         return cart;
     }
 
-    public void setCart(List<Product> cart) {
-        this.cart = cart;
-    }
 
     public void setActive(boolean active) {
         this.active = active;

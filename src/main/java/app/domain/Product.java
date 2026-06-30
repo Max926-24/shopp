@@ -26,9 +26,6 @@ public class Product {
         return active;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
 
     public Long getId() {
         return id;
