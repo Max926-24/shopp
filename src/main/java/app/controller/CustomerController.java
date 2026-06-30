@@ -38,7 +38,7 @@ public class CustomerController {
         service.restoreById(id);
     }
 
-    public double getCustomersCarsTotalCost(Long id) {
+    public double getCustomersCartsTotalCost(Long id) {
         return service.getCustomersCartTotalCost(id);
 
     }
